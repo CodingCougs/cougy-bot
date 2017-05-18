@@ -1,0 +1,14 @@
+{
+  "name": "final-bot",
+  "version": "1.0.0",
+  "description": "CoudingCougs bot demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CodingCougs",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.5.4"
+  }
+}
