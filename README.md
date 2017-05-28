@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# cougy-bot
+
+## cougy-bot
 Coding Cougs Hackathon demo bot
 
 ---
@@ -30,5 +30,5 @@ Get stock price
 
 
 =======
->>>>>>> bafe76f66589685e0252942771a372bb50a23b5c
+
 
