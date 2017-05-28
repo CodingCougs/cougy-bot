@@ -9,6 +9,8 @@
   "author": "CodingCougs",
   "license": "ISC",
   "dependencies": {
-    "botkit": "^0.5.4"
+    "botkit": "^0.5.4",
+    "giphy-api": "^1.2.6",
+    "yahoo-finance": "^0.3.2"
   }
 }
