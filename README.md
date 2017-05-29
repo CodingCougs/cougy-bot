@@ -28,5 +28,10 @@ Get stock price
 
 ---
 
+## News
+Get top news story from CNN
+* Ask the bot for the **`news`**
+* Bot responds with `Would you like me to show you the top news article?`
+* Depending on your answer, Bot responds the top story
 
-
+---
