@@ -12,6 +12,7 @@
     "botkit": "^0.5.4",
     "giphy-api": "^1.2.6",
     "newsapi": "^1.0.2",
+    "weather-js": "^2.0.0",
     "yahoo-finance": "^0.3.2"
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
 
-    token: "Bot-Token",
-    news_token: 'News-API-Token-Here' // https://newsapi.org/#documentation <-- Get your key here
+    token: "Bot-token",
+    news_token: 'news-token' // https://newsapi.org/#documentation <-- Get your key here
 };
 
