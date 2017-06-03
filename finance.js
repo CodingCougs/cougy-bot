@@ -9,7 +9,12 @@ askStock = function(response, convo) {
     console.log(response);
     convo.say("Let me check");
     
-    var askedStock = response.text.toUpperCase();
+    getStockPrice(response,convo);
+  });
+}
+
+getStockPrice = function(response,convo){
+  var askedStock = response.text.toUpperCase();
 
     yahooFinance.quote({
       symbol: askedStock,
@@ -62,10 +67,9 @@ askStock = function(response, convo) {
     }
     console.log(reply_with_attachments);
     convo.say(reply_with_attachments);
-    });
-
     convo.next();
   });
+  
 }
 
 

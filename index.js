@@ -8,6 +8,7 @@ var giphs = require('./giphs.js');
 
 var news = require('./news.js');
 
+
 var controller = Botkit.slackbot({
     require_delivery: true,
 });
@@ -53,8 +54,6 @@ controller.hears(['giph','giphy','giphs'],['mention','direct_message','direct_me
 controller.hears(['news','headlines','media'],['mention','direct_message','direct_mention'],function(bot,message) {
   bot.startConversation(message, askNews);
 });
-
-
 
 
 var bot = controller.spawn({

@@ -9,9 +9,15 @@ askWeather = function(response, convo) {
     // console.log(convo);
 
     convo.say("Awesome. Let me check...");
+    getWeather(response,convo);
+    
+  });
+}
 
+getWeather = function(response,convo){ 
+  
+  weather.find({search: response.text, degreeType: 'F'}, function(err, result) {
 
-    weather.find({search: response.text, degreeType: 'F'}, function(err, result) {
     if(err) console.log(err);
     
     // var jsonContent = JSON.parse(result);
@@ -30,11 +36,8 @@ askWeather = function(response, convo) {
   }
   
     convo.say(reply_with_attachments);
-    });
-
-    
     convo.next();
-  });
+    });
 }
 
 module.exports = askWeather;

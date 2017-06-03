@@ -5,7 +5,13 @@ var Botkit = require('botkit');
 askGiphs = function(response, convo) {
 convo.ask("[Search phrase]", function(response, convo) {
         
-        giphy.search(response.text.toLowerCase(), function (err, res) {
+        getGiph(response, convo);
+    });
+
+}
+
+getGiph = function(response,convo){
+    giphy.search(response.text.toLowerCase(), function (err, res) {
             // Res contains gif data! 
             // console.log(res);
             var result = res.data[0].images.original.url;
@@ -22,8 +28,9 @@ convo.ask("[Search phrase]", function(response, convo) {
             }
 
             convo.say(reply_with_attachments);
+            convo.next();
         });
-        convo.next();
-    });
-
+       
 }
+
+module.exports = askGiphs;
